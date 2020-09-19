@@ -1,0 +1,14 @@
+.header-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    padding: 25px;
+    font-size: 2rem;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+    flex: 1;
+}

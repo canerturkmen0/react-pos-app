@@ -1,0 +1,45 @@
+.submenus-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    justify-content: space-around;
+}
+
+.submenus-item-container {
+    border: 1px solid white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submenus-item-title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+}
+
+.submenus-item {
+    width: 200px;
+    display: flex;
+    margin: 20px 0px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.submenus-item-info {
+    display: flex;
+    white-space: nowrap;
+}
+
+.submenus-item-image {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+}
