@@ -32,9 +32,9 @@ const MenuType = () => {
 
     return (
         <div className="main-container">
-            <Header title={chosenMenuType?.caption} />
+            <Header title={chosenMenuType && chosenMenuType.caption} />
             <div className="main">
-                {chosenMenuType?.items?.map(item => (
+                {chosenMenuType && chosenMenuType.items && chosenMenuType.items.map(item => (
                     <div key={item.name} className="main-item">
                         <div className="main-item-image" style={{ backgroundImage: `url("${item.image}")` }} onClick={() => handleClick(item)}>
                             <div className="main-item-caption">

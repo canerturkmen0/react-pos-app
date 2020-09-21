@@ -16,9 +16,9 @@ const Home = () => {
 
     return (
         <div className="main-container">
-            <Header title={mainMenus?.description} />
+            <Header title={mainMenus && mainMenus.description} />
             <div className="main">
-                {mainMenus?.items?.map(item => (
+                {mainMenus && mainMenus.items && mainMenus.items.map(item => (
                     <div key={item.name} className="main-item">
                         <div className="main-item-image" style={{ backgroundImage: `url("${item.image}")` }} onClick={() => handleClick(item)}>
                             <h3 className="main-item-caption">{item.caption}</h3>
